@@ -1,0 +1,23 @@
+<div class="inner notice">
+  <h3>Привет, {{name}}! Расскажите нам немного о себе?</h3>
+  <form>
+    <p>
+      <label for="nickname">Имя</label> 
+      <input type="text" name="nickname" value="">
+    </p>
+    <p>
+      <label for="email">
+        Email
+        (<em>для <a href="http://gravatar.com">Gravatar</a></em>)
+      </label>
+      <input type="text" name="email" value="">
+    </p>
+    <p>
+      <label for="url">URL</label>
+      <input type="text" name="url" value="">
+    </p>
+    <input type="submit" value="Вперед &rarr;">
+    <input type="hidden" name="userCtxName" value="{{name}}" id="userCtxName">
+  </form>
+</div>
+

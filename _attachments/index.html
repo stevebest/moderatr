@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+    <title>Moderatr</title>
+    <link rel="stylesheet" href="style/main.css" type="text/css">
+  </head>
+  <body>
+    <div id="root">
+      <div id="pageHeader">
+        <h1 class="logo">
+          Moderatr
+          <span class="sublogo">Вопросы и ответы</span>
+        </h1>
+
+        <div id="account"></div>
+      </div>
+
+      <div id="profile"></div>
+
+      <div id="content">
+        <div id="items" class="inner"></div>
+        <div id="questionForm" class="inner"></div>
+      </div>
+
+      <div id="sidebar">
+        <div class="inner">
+          <h3><a href="#/">Главная страница</a></h3>
+        </div>
+        <div id="series" class="inner">
+        </div>
+      </div>
+      
+      <div id="root_footer"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <span class="logo">Moderatr</span>
+        <span class="copyright">
+          &copy; 2010,
+          <a href="http://stepanstolyarov.ru">Stepan Stolyarov</a>
+        </span>
+      </div>
+    </div>
+  </body>
+
+  <script src="vendor/couchapp/loader.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    $.couch.app(function(app) {
+      $("#account").evently("account", app);
+      $("#profile").evently("profile", app);
+      $("#items").evently("items", app);
+
+      $("#questionForm").evently("questionForm", app);
+
+      $.evently.connect("#account", "#profile", ["loggedIn","loggedOut"]);
+      $.evently.connect("#account", "#questionForm", ["loggedIn", "loggedOut"]);
+    });
+  </script>
+
+</html>  
+

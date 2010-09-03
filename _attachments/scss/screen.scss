@@ -1,0 +1,79 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@import "compass/css3";
+
+html {
+  background: #f9f9f9;
+}
+
+body {
+  h1.logo {
+    color: #333;
+    @include text-shadow(rgba(255, 255, 255, 0.7), 0px, 1px, 0px);
+  }
+}
+
+@import "compass/layout/sticky-footer";
+@include sticky-footer(54px);
+
+$max-width: 960px;
+
+#root {
+  max-width: $max-width;
+  margin: 0px auto;
+}
+
+#footer {
+  background-color: #333;
+  color: white;
+
+  @include text-shadow(rgba(0, 0, 0, 0.75), 0px, 1px, 2px);
+
+  a {
+    &, &:visited {
+      text-decoration: none;
+      color: #bbb;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .container {
+    max-width: $max-width;
+    margin: 0px auto;
+    padding-top: 1em;
+  }
+}
+
+#content {
+  width: 65.8537%;
+  float: left;
+  margin-right: 2.3%;
+}
+
+#sidebar {
+  width: 31.7073%;
+  float: left;
+}
+
+#profile, #content, #sidebar {
+  @include box-shadow(rgba(0, 0, 0, 0.25), 0px, 3px, 10px);
+
+  background: #fff;
+
+  .inner {
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+.notice {
+  background-color: #ffd09d;
+}
+

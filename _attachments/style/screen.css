@@ -1,0 +1,159 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 14, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 17, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 10, ../scss/screen.scss */
+html {
+  background: #f9f9f9;
+}
+
+/* line 15, ../scss/screen.scss */
+body h1.logo {
+  color: #333;
+  text-shadow: rgba(255, 255, 255, 0.7) 0px 1px 0px;
+}
+
+/* line 10, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -54px;
+}
+/* line 18, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#root #root_footer {
+  height: 54px;
+}
+
+/* line 20, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#footer {
+  clear: both;
+  position: relative;
+  height: 54px;
+}
+
+/* line 26, ../scss/screen.scss */
+#root {
+  max-width: 960px;
+  margin: 0px auto;
+}
+
+/* line 31, ../scss/screen.scss */
+#footer {
+  background-color: #333;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.75) 0px 1px 2px;
+}
+/* line 38, ../scss/screen.scss */
+#footer a, #footer a:visited {
+  text-decoration: none;
+  color: #bbb;
+}
+/* line 42, ../scss/screen.scss */
+#footer a:hover {
+  text-decoration: underline;
+}
+/* line 47, ../scss/screen.scss */
+#footer .container {
+  max-width: 960px;
+  margin: 0px auto;
+  padding-top: 1em;
+}
+
+/* line 54, ../scss/screen.scss */
+#content {
+  width: 65.8537%;
+  float: left;
+  margin-right: 2.3%;
+}
+
+/* line 60, ../scss/screen.scss */
+#sidebar {
+  width: 31.7073%;
+  float: left;
+}
+
+/* line 65, ../scss/screen.scss */
+#profile, #content, #sidebar {
+  -moz-box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 10px;
+  -o-box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 10px;
+  background: #fff;
+}
+/* line 70, ../scss/screen.scss */
+#profile .inner, #content .inner, #sidebar .inner {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+/* line 76, ../scss/screen.scss */
+.notice {
+  background-color: #ffd09d;
+}

@@ -1,0 +1,78 @@
+/*
+ * Central place for adding all the styling stuff.
+ */
+
+@import "screen";
+
+@import "partials/_forms";
+
+@import "partials/_questions";
+@import "partials/_avatars";
+
+html {
+  font-size: 100.01%;
+}
+
+body {
+  background: none;
+
+  font: {
+    family: Georgia, Times, "Times New Roman", sans-serif;
+    size: 16px;
+  }
+  line-height: 1.5;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1;
+  img {
+    margin: 0px;
+  }
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+
+  &.logo {
+    .sublogo {
+      display: block;
+      font-style: italic;
+      font-size: 0.45em;
+    }
+  }
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+p {
+  margin: 0 0 1.5em;
+}
+
+/* Layout */
+
+#pageHeader {
+  margin: 1.5em 0px;
+
+  position: relative;
+
+  #account {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+}
+

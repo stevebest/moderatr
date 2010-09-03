@@ -1,0 +1,342 @@
+/*
+ * Central place for adding all the styling stuff.
+ */
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 14, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 17, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 10, ../scss/screen.scss */
+html {
+  background: #f9f9f9;
+}
+
+/* line 15, ../scss/screen.scss */
+body h1.logo {
+  color: #333;
+  text-shadow: rgba(255, 255, 255, 0.7) 0px 1px 0px;
+}
+
+/* line 10, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -54px;
+}
+/* line 18, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#root #root_footer {
+  height: 54px;
+}
+
+/* line 20, ../../../../../../var/lib/gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#footer {
+  clear: both;
+  position: relative;
+  height: 54px;
+}
+
+/* line 26, ../scss/screen.scss */
+#root {
+  max-width: 960px;
+  margin: 0px auto;
+}
+
+/* line 31, ../scss/screen.scss */
+#footer {
+  background-color: #333;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.75) 0px 1px 2px;
+}
+/* line 38, ../scss/screen.scss */
+#footer a, #footer a:visited {
+  text-decoration: none;
+  color: #bbb;
+}
+/* line 42, ../scss/screen.scss */
+#footer a:hover {
+  text-decoration: underline;
+}
+/* line 47, ../scss/screen.scss */
+#footer .container {
+  max-width: 960px;
+  margin: 0px auto;
+  padding-top: 1em;
+}
+
+/* line 54, ../scss/screen.scss */
+#content {
+  width: 65.8537%;
+  float: left;
+  margin-right: 2.3%;
+}
+
+/* line 60, ../scss/screen.scss */
+#sidebar {
+  width: 31.7073%;
+  float: left;
+}
+
+/* line 65, ../scss/screen.scss */
+#profile, #content, #sidebar {
+  -moz-box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 10px;
+  -o-box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 10px;
+  background: #fff;
+}
+/* line 70, ../scss/screen.scss */
+#profile .inner, #content .inner, #sidebar .inner {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+/* line 76, ../scss/screen.scss */
+.notice {
+  background-color: #ffd09d;
+}
+
+/*
+ * Form elements definitions
+ */
+/*
+ * CSS buttons courtesy of
+ * http://www.zurb.com/article/266/super-awesome-buttons-with-css3-and-rgba
+ * Converted to sass via sass-convert and then parameterized
+ */
+/* line 7, ../scss/partials/_forms.scss */
+input[type=submit] {
+  background-color: #91bd09;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(255, 255, 255, 0.2)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 100%);
+  display: inline-block;
+  padding: 5px 10px 6px;
+  font-size: 13px;
+  color: white !important;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+  border: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+  position: relative;
+  cursor: pointer;
+}
+/* line 62, ../scss/partials/_zurb.scss */
+input[type=submit]:visited {
+  background-color: #91bd09;
+}
+/* line 65, ../scss/partials/_zurb.scss */
+input[type=submit]:hover {
+  background-color: #80ac00;
+  color: white;
+}
+/* line 55, ../scss/partials/_zurb.scss */
+input[type=submit]:active {
+  top: 1px;
+}
+
+/* line 11, ../scss/partials/_forms.scss */
+input[type=reset] {
+  background-color: #2daebf;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(255, 255, 255, 0.2)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 100%);
+  display: inline-block;
+  padding: 5px 10px 6px;
+  font-size: 13px;
+  color: white !important;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+  border: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+  position: relative;
+  cursor: pointer;
+}
+/* line 62, ../scss/partials/_zurb.scss */
+input[type=reset]:visited {
+  background-color: #2daebf;
+}
+/* line 65, ../scss/partials/_zurb.scss */
+input[type=reset]:hover {
+  background-color: #1c9dae;
+  color: white;
+}
+/* line 55, ../scss/partials/_zurb.scss */
+input[type=reset]:active {
+  top: 1px;
+}
+
+/*
+ *
+ */
+/* line 7, ../scss/partials/_questions.scss */
+.question {
+  margin: 1em 0px 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #ccc;
+}
+
+/*
+ * Avatar box.
+ */
+/* line 5, ../scss/partials/_avatars.scss */
+div.avatar {
+  position: relative;
+  min-height: 40px;
+}
+/* line 10, ../scss/partials/_avatars.scss */
+div.avatar img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+/* line 16, ../scss/partials/_avatars.scss */
+div.avatar .name, div.avatar .email {
+  margin-left: 50px;
+  font-size: 80%;
+}
+
+/* line 12, ../scss/main.scss */
+html {
+  font-size: 100.01%;
+}
+
+/* line 16, ../scss/main.scss */
+body {
+  background: none;
+  font-family: Georgia, Times, "Times New Roman", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Typography */
+/* line 27, ../scss/main.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1;
+}
+/* line 30, ../scss/main.scss */
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
+  margin: 0px;
+}
+
+/* line 35, ../scss/main.scss */
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+/* line 40, ../scss/main.scss */
+h1.logo .sublogo {
+  display: block;
+  font-style: italic;
+  font-size: 0.45em;
+}
+
+/* line 48, ../scss/main.scss */
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+
+/* line 53, ../scss/main.scss */
+h3 {
+  font-size: 1.5em;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+/* line 61, ../scss/main.scss */
+p {
+  margin: 0 0 1.5em;
+}
+
+/* Layout */
+/* line 67, ../scss/main.scss */
+#pageHeader {
+  margin: 1.5em 0px;
+  position: relative;
+}
+/* line 72, ../scss/main.scss */
+#pageHeader #account {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}

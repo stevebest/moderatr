@@ -1,0 +1,14 @@
+/*
+ * Form elements definitions
+ */
+
+@import "_zurb";
+
+input[type=submit] {
+  @include zurb-button($zurb-color-green);
+}
+
+input[type=reset] {
+  @include zurb-button($zurb-color-blue);
+}
+
