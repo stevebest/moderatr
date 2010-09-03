@@ -7,31 +7,44 @@
   </head>
   <body>
     <div id="root">
-      <h1>Moderatr</h1>
+      <div id="pageHeader">
+        <h1 class="logo">
+          <a href="./index.html">Moderatr</a>
+        </h1>
+
+        <div id="account"></div>
+      </div>
+
+      <div id="question">
       {{#question}}
         {{>question}}
+        
+        <h3>Ответы</h3>
         <div id="answers">
         </div>
         <div id="answerForm">
         </div>
 
-        <script src="vendor/couchapp/loader.js"></script>
-        <script type="text/javascript" charset="utf-8">
-          $.couch.app(function(app) {
-            $("#answers").evently("answers", app);
-            $("#answerForm").evently("answerForm", app);
-            $.evently.connect("#account", "#answerForm", ["loggedIn","loggedOut"]);
-          });
-        </script>
-
       {{/question}}
       {{^question}}
         {{>questionForm}}
       {{/question}}
+      </div>
+
       <div id="root_footer">
       </div>
     </div>
     {{>footer}}
   </body>
-</html>
 
+  <script src="vendor/couchapp/loader.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    $.couch.app(function(app) {
+      $('#account').evently('account', app);
+
+      $("#answers").evently("answers", app);
+      $("#answerForm").evently("answerForm", app);
+      $.evently.connect("#account", "#answerForm", ["loggedIn","loggedOut"]);
+    });
+  </script>
+</html>

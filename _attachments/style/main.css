@@ -123,7 +123,7 @@ html, body {
   text-decoration: underline;
 }
 /* line 47, ../scss/screen.scss */
-#footer .container {
+#footer .inner {
   max-width: 960px;
   margin: 0px auto;
   padding-top: 1em;
@@ -308,14 +308,19 @@ h1.logo .sublogo {
   font-style: italic;
   font-size: 0.45em;
 }
+/* line 46, ../scss/main.scss */
+h1.logo a {
+  text-decoration: none;
+  color: inherit;
+}
 
-/* line 48, ../scss/main.scss */
+/* line 53, ../scss/main.scss */
 h2 {
   font-size: 2em;
   margin-bottom: 0.75em;
 }
 
-/* line 53, ../scss/main.scss */
+/* line 58, ../scss/main.scss */
 h3 {
   font-size: 1.5em;
   border-bottom: 1px solid #ccc;
@@ -323,18 +328,18 @@ h3 {
   padding-bottom: 0.5em;
 }
 
-/* line 61, ../scss/main.scss */
+/* line 66, ../scss/main.scss */
 p {
   margin: 0 0 1.5em;
 }
 
 /* Layout */
-/* line 67, ../scss/main.scss */
+/* line 72, ../scss/main.scss */
 #pageHeader {
   margin: 1.5em 0px;
   position: relative;
 }
-/* line 72, ../scss/main.scss */
+/* line 77, ../scss/main.scss */
 #pageHeader #account {
   position: absolute;
   top: 0px;
