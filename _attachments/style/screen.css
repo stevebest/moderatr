@@ -139,21 +139,21 @@ html, body {
   float: left;
 }
 
-/* line 65, ../scss/screen.scss */
-#profile, #content, #sidebar {
+/* line 74, ../scss/screen.scss */
+#profile, #content, #sidebar, .box {
   -moz-box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 10px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 10px;
   -o-box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 10px;
   background: #fff;
 }
-/* line 70, ../scss/screen.scss */
-#profile .inner, #content .inner, #sidebar .inner {
+/* line 68, ../scss/screen.scss */
+#profile .inner, #content .inner, #sidebar .inner, .box .inner {
   padding: 1em;
   margin-bottom: 1em;
 }
 
-/* line 76, ../scss/screen.scss */
+/* line 78, ../scss/screen.scss */
 .notice {
   background-color: #ffd09d;
 }
