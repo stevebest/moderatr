@@ -50,12 +50,12 @@
     $.couch.app(function(app) {
       $("#account").evently("account", app);
       $("#profile").evently("profile", app);
-      $("#items").evently("items", app);
-
-      $("#questionForm").evently("questionForm", app);
 
       $.evently.connect("#account", "#profile", ["loggedIn","loggedOut"]);
       $.evently.connect("#account", "#questionForm", ["loggedIn", "loggedOut"]);
+
+      $("#questionForm").evently("questionForm", app);
+      $("#items").evently("items", app);
     });
   </script>
 

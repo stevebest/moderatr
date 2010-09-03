@@ -1,37 +1,25 @@
 <h2>Последние вопросы</h2>
 <div class="questions">
-  {{#items}}
+  {{#questions}}
     <div class="question" id="q-{{id}}">
+      <div class="text">{{question}}</div>
+      <div class="created_at">{{created_at}}</div>
+
       <div class="avatar">
         {{#gravatar_url}}<img src="{{gravatar_url}}" alt="{{name}}">{{/gravatar_url}}
         <div class="name">{{nickname}}</div>
       </div>
 
-      <div class="text">{{question}}</div>
-      <div class="created_at">{{created_at}}</div>
-      
       <div class="actions">
-
-        <a href="_show/question/{{id}}">#</a>
-        
         <a class="vote up off" href="#vote-up">&uarr;</a>
         <a class="vote down off" href="#vote-down">&darr;</a>
 
-        <a href="#reply-{{id}}" class="reply">Ответить на вопрос</a>
-
-        <form class="answerQuestion" style="display: none;">
-          <textarea cols="60" rows="3"></textarea>
-          <div>
-            <input type="submit" value="Отправить ответ">
-            <input type="reset" value="Отмена">
-          </div>
-        </form>
-
+        <a href="_show/question/{{id}}" class="reply">Ответить на вопрос</a>
       </div>
     </div>
-  {{/items}}
-  {{^items}}
+  {{/questions}}
+  {{^questions}}
     <div>Вопросов пока нет!</div>
-  {{/items}}
+  {{/questions}}
 </div>
 

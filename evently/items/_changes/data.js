@@ -1,8 +1,8 @@
-function(data) {
+function (data) {
 //  $.log(data);
   var p;
   return {
-    items : data.rows.map(function(r) {
+    questions : data.rows.map(function(r) {
       p = (r.value && r.value.profile) || {};
       p.id = r.id;
       p.question = r.value && r.value.question;
@@ -10,4 +10,5 @@ function(data) {
       return p;
     })
   }
-};
+}
+
