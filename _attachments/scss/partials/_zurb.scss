@@ -76,3 +76,10 @@ $zurb-color-default: $zurb-color-black;
   }
 }
 
+a.awesome {
+  @include zurb-button;
+  &.red {
+    @include zurb-color($zurb-color-red);
+  }
+}
+

@@ -169,6 +169,56 @@ html, body {
  * http://www.zurb.com/article/266/super-awesome-buttons-with-css3-and-rgba
  * Converted to sass via sass-convert and then parameterized
  */
+/* line 79, ../scss/partials/_zurb.scss */
+a.awesome {
+  background-color: #222222;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(255, 255, 255, 0.2)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 100%);
+  display: inline-block;
+  padding: 5px 10px 6px;
+  font-size: 13px;
+  color: white !important;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+  border: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+  position: relative;
+  cursor: pointer;
+}
+/* line 62, ../scss/partials/_zurb.scss */
+a.awesome:visited {
+  background-color: #222222;
+}
+/* line 65, ../scss/partials/_zurb.scss */
+a.awesome:hover {
+  background-color: #111111;
+  color: white;
+}
+/* line 55, ../scss/partials/_zurb.scss */
+a.awesome:active {
+  top: 1px;
+}
+/* line 81, ../scss/partials/_zurb.scss */
+a.awesome.red {
+  background-color: #e33100;
+}
+/* line 62, ../scss/partials/_zurb.scss */
+a.awesome.red:visited {
+  background-color: #e33100;
+}
+/* line 65, ../scss/partials/_zurb.scss */
+a.awesome.red:hover {
+  background-color: #d22000;
+  color: white;
+}
+
 /* line 7, ../scss/partials/_forms.scss */
 input[type=submit] {
   background-color: #91bd09;
