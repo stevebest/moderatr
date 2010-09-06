@@ -1,4 +1,4 @@
-function (data, b) {
+function (data) {
   var answer;
   var result = {
     answers : data.rows.map(function (row) {
