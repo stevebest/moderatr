@@ -17,31 +17,26 @@
       </div>
 
       {{#question}}
-      <div class="box">
-        <div id="question">
-          {{>question}}
-        </div>
-      </div>
+      <div id="content">
+        {{>question}}
 
-      <div class="box">
-        <div class="inner">
-          <h3>Ответы</h3>
-          <div id="answers">
-          </div>
-        </div>
-
-        <div id="answerForm">
-        </div>
+        <h3>Ответы</h3>
+        <div id="answers"></div>
+        <div id="answerForm"></div>
       </div>
       {{/question}}
 
       {{^question}}
-      <div class="box">
+      <div id="content">
         <div class="inner">
         {{>questionForm}}
         </div>
       </div>
       {{/question}}
+
+      <div id="sidebar">
+        <div id="profile"></div>
+      </div>
 
       <div id="root_footer">
       </div>
@@ -53,10 +48,13 @@
   <script type="text/javascript" charset="utf-8">
     $.couch.app(function(app) {
       $('#account').evently('account', app);
+      $('#profile').evently('profile', app);
 
       $("#answers").evently("answers", app);
       $("#answerForm").evently("answerForm", app);
-      $.evently.connect("#account", "#answerForm", ["loggedIn","loggedOut"]);
+
+      $.evently.connect('#account', '#profile', ['loggedIn', 'loggedOut']);
+      $.evently.connect('#account', '#answerForm', ['loggedIn', 'loggedOut']);
 
       {{#_id}}
       $$('#question').id = '{{_id}}';

@@ -5,7 +5,9 @@
 @import "compass/utilities/general/clearfix";
 
 .question {
-  margin: 1em 0px 0.5em;
+  .text {
+    font-size: 1.2em;
+  }
   padding-bottom: 0.5em;
   border-bottom: 1px solid #ccc;
 }

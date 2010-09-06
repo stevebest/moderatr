@@ -3,7 +3,7 @@ function () {
   var fdoc = form.serializeObject();
   fdoc.answerTo = $$("#question").id;
   fdoc.created_at = new Date();
-  fdoc.profile = $$("#account").profile;
+  fdoc.profile = $$("#profile").profile;
   $$(this).app.db.saveDoc(fdoc, {
     success : function() {
       form[0].reset();
