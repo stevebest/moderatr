@@ -2,7 +2,15 @@
 <div class="answer">
   {{answer}}
 
-  {{created_at}}
+  <div class="info">
+    <abbr class="created_at" title="{{created_at}}">{{pretty_created_at}}</abbr>
+    {{#profile}}
+    <span class="answered_by">{{name}}</span>
+    {{/profile}}
+    {{^profile}}
+    Ответил Анонимус
+    {{/profile}}
+  </div>
 </div>
 {{/answers}}
 
