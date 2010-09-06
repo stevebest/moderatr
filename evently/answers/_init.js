@@ -3,7 +3,7 @@ function () {
   var db = $$(widget).app.db;
   var questionId = $$(widget).app.req.path.pop();
 
-  db.view(db.name + '/answers', {
+  db.view('moderatr/answers', {
     'startkey' : [questionId],
     'endkey'   : [questionId, {}],
     'reduce'   : false,
