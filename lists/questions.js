@@ -10,7 +10,8 @@ function () {
 
   var row;
   while (row = getRow()) {
-    Mustache.to_html(templates.partials.question, row.value, {}, send);
+    Mustache.to_html(templates.partials.question, row.value,
+        templates.partials, send);
   }
 }
 
