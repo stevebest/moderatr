@@ -1,0 +1,14 @@
+{{#answers}}
+<div class="answer">
+  <div class="text">{{{answer}}}</div>
+  <div class="info">
+    {{#profile}}
+    <span class="answered_by">{{name}}</span>
+    {{/profile}}
+    <abbr class="created_at" title="created_at">{{created_at}}</div>
+  </div>
+</div>
+{{/answers}}
+{{^answers}}
+<p>На этот вопрос ответов пока нет. Будьте первым, кто на него ответит.</p>
+{{/answers}}
