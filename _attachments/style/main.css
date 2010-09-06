@@ -153,7 +153,7 @@ html, body {
 }
 /* line 70, ../scss/screen.scss */
 #content .inner, #sidebar .inner, .box .inner {
-  padding: 1em;
+  margin: 1em;
 }
 
 /* line 79, ../scss/screen.scss */
@@ -294,16 +294,23 @@ input[type=reset]:active {
 }
 
 /*
- *
+ * Styling for questions and answers.
  */
-/* line 7, ../scss/partials/_questions.scss */
+/* line 5, ../scss/partials/_questions.scss */
 .question {
   padding-bottom: 0.5em;
   border-bottom: 1px solid #ccc;
 }
-/* line 8, ../scss/partials/_questions.scss */
+/* line 9, ../scss/partials/_questions.scss */
 .question .text {
   font-size: 1.2em;
+}
+
+/* line 14, ../scss/partials/_questions.scss */
+.answer {
+  margin: 0.5em 0px;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 0.5em;
 }
 
 /*
@@ -324,6 +331,17 @@ div.avatar img {
 div.avatar .name, div.avatar .email {
   margin-left: 50px;
   font-size: 80%;
+}
+
+/* line 22, ../scss/partials/_avatars.scss */
+div.avatar.mini {
+  min-height: 20px;
+}
+/* line 24, ../scss/partials/_avatars.scss */
+div.avatar.mini img {
+  width: 20px;
+  height: 20px;
+  position: inline;
 }
 
 /* line 12, ../scss/main.scss */
@@ -376,23 +394,21 @@ h2 {
 /* line 58, ../scss/main.scss */
 h3 {
   font-size: 1.5em;
-  border-bottom: 1px solid #ccc;
   margin-bottom: 0.5em;
-  padding-bottom: 0.5em;
 }
 
-/* line 66, ../scss/main.scss */
+/* line 63, ../scss/main.scss */
 p {
   margin: 0 0 1.5em;
 }
 
 /* Layout */
-/* line 72, ../scss/main.scss */
+/* line 69, ../scss/main.scss */
 #pageHeader {
   margin: 1.5em 0px;
   position: relative;
 }
-/* line 77, ../scss/main.scss */
+/* line 74, ../scss/main.scss */
 #pageHeader #account {
   position: absolute;
   top: 0px;

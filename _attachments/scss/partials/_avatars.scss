@@ -19,3 +19,12 @@ div.avatar {
   }
 }
 
+div.avatar.mini {
+  min-height: 20px;
+  img {
+    width: 20px;
+    height: 20px;
+    position: inline;
+  }
+}
+

@@ -150,7 +150,7 @@ html, body {
 }
 /* line 70, ../scss/screen.scss */
 #content .inner, #sidebar .inner, .box .inner {
-  padding: 1em;
+  margin: 1em;
 }
 
 /* line 79, ../scss/screen.scss */

@@ -1,14 +1,21 @@
 /*
- *
+ * Styling for questions and answers.
  */
 
-@import "compass/utilities/general/clearfix";
-
 .question {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #ccc;
+
   .text {
     font-size: 1.2em;
   }
-  padding-bottom: 0.5em;
-  border-bottom: 1px solid #ccc;
 }
 
+.answer {
+  margin: 0.5em 0px;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 0.5em;
+
+  .text {
+  }
+}
