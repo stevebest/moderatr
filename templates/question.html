@@ -36,7 +36,11 @@
       {{/question}}
 
       {{^question}}
+      <div class="box">
+        <div class="inner">
         {{>questionForm}}
+        </div>
+      </div>
       {{/question}}
 
       <div id="root_footer">
@@ -53,6 +57,10 @@
       $("#answers").evently("answers", app);
       $("#answerForm").evently("answerForm", app);
       $.evently.connect("#account", "#answerForm", ["loggedIn","loggedOut"]);
+
+      {{#_id}}
+      $$('#question').id = '{{_id}}';
+      {{/_id}}
     });
   </script>
 </html>
