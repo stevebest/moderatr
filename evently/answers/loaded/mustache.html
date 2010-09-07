@@ -3,9 +3,12 @@
   <div class="text">{{{answer}}}</div>
   <div class="info">
     {{#profile}}
-    <span class="answered_by">{{name}}</span>
+    <span class="avatar">
+      {{#gravatar_url}}<img src="{{gravatar_url}}" alt=""/>{{/gravatar_url}}
+      <span class="name">{{name}}</span>
+    </span>
     {{/profile}}
-    <abbr class="created_at" title="created_at">{{created_at}}</div>
+    <abbr class="created_at" title="{{created_at}}">{{pretty_created_at}}</abbr>
   </div>
 </div>
 {{/answers}}

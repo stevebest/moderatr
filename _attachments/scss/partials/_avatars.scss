@@ -19,12 +19,15 @@ div.avatar {
   }
 }
 
-div.avatar.mini {
-  min-height: 20px;
+span.avatar {
   img {
-    width: 20px;
-    height: 20px;
-    position: inline;
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: middle;
+    margin-right: 0.3em;
+  }
+
+  .name {
   }
 }
 

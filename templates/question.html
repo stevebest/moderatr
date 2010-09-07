@@ -53,14 +53,16 @@
       $('#account').evently('account', app);
       $('#profile').evently('profile', app);
 
-      $("#answers").evently("answers", app);
-      $("#answerForm").evently("answerForm", app);
-
       $.evently.connect('#account', '#profile', ['loggedIn', 'loggedOut']);
-      $.evently.connect('#account', '#answerForm', ['loggedIn', 'loggedOut']);
 
       {{#_id}}
       $$('#question').id = '{{_id}}';
+
+      $("#answers").evently("answers", app);
+      $("#answerForm").evently("answerForm", app);
+
+      $.evently.connect('#account', '#answerForm', ['loggedIn', 'loggedOut']);
+      $.evently.connect('#answerForm', '#answers', ['answerAdded']);
       {{/_id}}
     });
   </script>

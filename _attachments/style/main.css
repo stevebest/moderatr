@@ -301,16 +301,20 @@ input[type=reset]:active {
   padding-bottom: 0.5em;
   border-bottom: 1px solid #ccc;
 }
-/* line 9, ../scss/partials/_questions.scss */
-.question .text {
-  font-size: 1.2em;
-}
 
-/* line 14, ../scss/partials/_questions.scss */
+/* line 10, ../scss/partials/_questions.scss */
 .answer {
   margin: 0.5em 0px;
   border-bottom: 1px dotted #ccc;
   padding-bottom: 0.5em;
+}
+/* line 18, ../scss/partials/_questions.scss */
+.answer .info {
+  font-size: 0.8em;
+}
+/* line 21, ../scss/partials/_questions.scss */
+.answer .info .created_at {
+  color: #444;
 }
 
 /*
@@ -333,15 +337,12 @@ div.avatar .name, div.avatar .email {
   font-size: 80%;
 }
 
-/* line 22, ../scss/partials/_avatars.scss */
-div.avatar.mini {
-  min-height: 20px;
-}
-/* line 24, ../scss/partials/_avatars.scss */
-div.avatar.mini img {
-  width: 20px;
-  height: 20px;
-  position: inline;
+/* line 23, ../scss/partials/_avatars.scss */
+span.avatar img {
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: middle;
+  margin-right: 0.3em;
 }
 
 /* line 12, ../scss/main.scss */

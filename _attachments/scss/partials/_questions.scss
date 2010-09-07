@@ -5,10 +5,6 @@
 .question {
   padding-bottom: 0.5em;
   border-bottom: 1px solid #ccc;
-
-  .text {
-    font-size: 1.2em;
-  }
 }
 
 .answer {
@@ -17,5 +13,13 @@
   padding-bottom: 0.5em;
 
   .text {
+  }
+
+  .info {
+    font-size: 0.8em;
+
+    .created_at {
+      color: #444;
+    }
   }
 }
