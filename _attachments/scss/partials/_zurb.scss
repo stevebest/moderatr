@@ -20,7 +20,7 @@ $zurb-color-default: $zurb-color-black;
   @include zurb-color($color);
 
   @include linear-gradient(color-stops(
-      rgba(255,255,255,0.3),
+      rgba(255,255,255,0.45),
       rgba(255,255,255,0.2)
     ));
 

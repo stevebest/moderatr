@@ -172,8 +172,8 @@ html, body {
 /* line 79, ../scss/partials/_zurb.scss */
 a.awesome {
   background-color: #222222;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(255, 255, 255, 0.2)));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 100%);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(255, 255, 255, 0.45)), color-stop(100%, rgba(255, 255, 255, 0.2)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.2) 100%);
   display: inline-block;
   padding: 5px 10px 6px;
   font-size: 13px;
@@ -222,8 +222,8 @@ a.awesome.red:hover {
 /* line 7, ../scss/partials/_forms.scss */
 input[type=submit] {
   background-color: #91bd09;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(255, 255, 255, 0.2)));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 100%);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(255, 255, 255, 0.45)), color-stop(100%, rgba(255, 255, 255, 0.2)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.2) 100%);
   display: inline-block;
   padding: 5px 10px 6px;
   font-size: 13px;
@@ -259,8 +259,8 @@ input[type=submit]:active {
 /* line 11, ../scss/partials/_forms.scss */
 input[type=reset] {
   background-color: #2daebf;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(255, 255, 255, 0.2)));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 100%);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(255, 255, 255, 0.45)), color-stop(100%, rgba(255, 255, 255, 0.2)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.2) 100%);
   display: inline-block;
   padding: 5px 10px 6px;
   font-size: 13px;
@@ -291,6 +291,16 @@ input[type=reset]:hover {
 /* line 55, ../scss/partials/_zurb.scss */
 input[type=reset]:active {
   top: 1px;
+}
+
+/* line 17, ../scss/partials/_forms.scss */
+input[type=text],
+input[type=password],
+textarea {
+  box-model: border;
+  outline: none;
+  border: solid 1px #aaa;
+  border-top-color: #777;
 }
 
 /*

@@ -12,3 +12,11 @@ input[type=reset] {
   @include zurb-button($zurb-color-blue);
 }
 
+input[type=text],
+input[type=password],
+textarea {
+  box-model: border;
+  outline: none;
+  border: solid 1px #aaa;
+  border-top-color: #777;
+}
