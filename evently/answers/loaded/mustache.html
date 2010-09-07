@@ -1,5 +1,5 @@
 {{#answers}}
-<div class="answer">
+<div class="answer" id="answer-{{id}}">
   <div class="text">{{{answer}}}</div>
   <div class="info">
     {{#profile}}
@@ -8,7 +8,9 @@
       <span class="name">{{name}}</span>
     </span>
     {{/profile}}
-    <abbr class="created_at" title="{{created_at}}">{{pretty_created_at}}</abbr>
+    {{#created_at}}
+    <abbr class="created_at" title="{{raw}}">{{pretty}}</abbr>
+    {{/created_at}}
   </div>
 </div>
 {{/answers}}
