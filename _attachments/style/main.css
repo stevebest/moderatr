@@ -338,12 +338,13 @@ textarea {
   font-size: 0.8em;
   text-transform: lowercase;
   text-decoration: none;
-}
-/* line 36, ../scss/partials/_questions.scss */
-.answer .actions a.delete {
   color: gray;
 }
-/* line 38, ../scss/partials/_questions.scss */
+/* line 37, ../scss/partials/_questions.scss */
+.answer .actions a:hover {
+  text-decoration: underline;
+}
+/* line 41, ../scss/partials/_questions.scss */
 .answer .actions a.delete:hover {
   color: red;
 }

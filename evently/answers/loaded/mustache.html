@@ -12,9 +12,17 @@
     <abbr class="created_at" title="{{raw}}">{{pretty}}</abbr>
     {{/created_at}}
   </div>
+  
+  {{#actions}}
   <div class="actions">
+    {{#edit}}
+    <a href="#edit" class="edit">Редактировать</a>
+    {{/edit}}
+    {{#delete}}
     <a href="#delete" class="delete">Удалить</a>
+    {{/delete}}
   </div class="actions">
+  {{/actions}}
 </div>
 {{/answers}}
 {{^answers}}

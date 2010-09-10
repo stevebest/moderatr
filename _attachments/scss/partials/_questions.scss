@@ -33,8 +33,11 @@
       font-size: 0.8em;
       text-transform: lowercase;
       text-decoration: none;
+      color: gray;
+      &:hover {
+        text-decoration: underline;
+      }
       &.delete {
-        color: gray;
         &:hover {
           color: red;
         }
