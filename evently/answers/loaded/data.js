@@ -21,8 +21,8 @@ function (event, data) {
       result.profile = row.doc.profile;
 
       result.actions = {
-        edit : isAdmin || (false),
-        delete : isAdmin
+        'edit' : isAdmin || (false),
+        'delete' : isAdmin
       };
 
       return result;
