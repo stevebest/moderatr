@@ -12,5 +12,11 @@ function (newDoc, oldDoc, userCtx) {
     if (newDoc._deleted) {
       forbidden("You may not delete a doc.");
     }
+
+    if (oldDoc.profile && oldDoc.profile.name) {
+      if (oldDoc.profile.name != userCtx.name) {
+        forbidden("You may not edit someone else's document.");
+      }
+    }
   }
-};
+}
