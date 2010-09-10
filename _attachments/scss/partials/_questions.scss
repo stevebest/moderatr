@@ -11,6 +11,7 @@
   margin: 0.5em 0px;
   border-bottom: 1px dotted #ccc;
   padding-bottom: 0.5em;
+  position: relative;
 
   .text {
   }
@@ -20,6 +21,24 @@
 
     .created_at {
       color: #444;
+    }
+  }
+  
+  .actions {
+    position: absolute;
+    right: 0px;
+    bottom: 0.5em;
+
+    a {
+      font-size: 0.8em;
+      text-transform: lowercase;
+      text-decoration: none;
+      &.delete {
+        color: gray;
+        &:hover {
+          color: red;
+        }
+      }
     }
   }
 }

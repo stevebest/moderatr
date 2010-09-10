@@ -317,14 +317,35 @@ textarea {
   margin: 0.5em 0px;
   border-bottom: 1px dotted #ccc;
   padding-bottom: 0.5em;
+  position: relative;
 }
-/* line 18, ../scss/partials/_questions.scss */
+/* line 19, ../scss/partials/_questions.scss */
 .answer .info {
   font-size: 0.8em;
 }
-/* line 21, ../scss/partials/_questions.scss */
+/* line 22, ../scss/partials/_questions.scss */
 .answer .info .created_at {
   color: #444;
+}
+/* line 27, ../scss/partials/_questions.scss */
+.answer .actions {
+  position: absolute;
+  right: 0px;
+  bottom: 0.5em;
+}
+/* line 32, ../scss/partials/_questions.scss */
+.answer .actions a {
+  font-size: 0.8em;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+/* line 36, ../scss/partials/_questions.scss */
+.answer .actions a.delete {
+  color: gray;
+}
+/* line 38, ../scss/partials/_questions.scss */
+.answer .actions a.delete:hover {
+  color: red;
 }
 
 /*

@@ -5,8 +5,9 @@ function () {
 
   db.view('moderatr/answers', {
     'startkey' : [questionId],
-    'endkey'   : [questionId, {}],
-    'reduce'   : false,
+    'endkey' : [questionId, {}],
+    'reduce' : false,
+    'include_docs' : true,
     success : function (data) {
       widget.trigger('loaded', [data]);
     }

@@ -1,5 +1,5 @@
 {{#answers}}
-<div class="answer" id="answer-{{id}}">
+<div class="answer" id="answer-{{id}}-{{rev}}">
   <div class="text">{{{answer}}}</div>
   <div class="info">
     {{#profile}}
@@ -12,6 +12,9 @@
     <abbr class="created_at" title="{{raw}}">{{pretty}}</abbr>
     {{/created_at}}
   </div>
+  <div class="actions">
+    <a href="#delete" class="delete">Удалить</a>
+  </div class="actions">
 </div>
 {{/answers}}
 {{^answers}}
