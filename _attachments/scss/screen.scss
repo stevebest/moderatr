@@ -25,7 +25,8 @@ $max-width: 960px;
 
 #root {
   max-width: $max-width;
-  margin: 0px auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #footer {

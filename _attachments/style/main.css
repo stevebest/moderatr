@@ -104,45 +104,46 @@ html, body {
 /* line 26, ../scss/screen.scss */
 #root {
   max-width: 960px;
-  margin: 0px auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* line 31, ../scss/screen.scss */
+/* line 32, ../scss/screen.scss */
 #footer {
   background-color: #333;
   color: white;
   text-shadow: rgba(0, 0, 0, 0.75) 0px 1px 2px;
 }
-/* line 38, ../scss/screen.scss */
+/* line 39, ../scss/screen.scss */
 #footer a, #footer a:visited {
   text-decoration: none;
   color: #bbb;
 }
-/* line 42, ../scss/screen.scss */
+/* line 43, ../scss/screen.scss */
 #footer a:hover {
   text-decoration: underline;
 }
-/* line 47, ../scss/screen.scss */
+/* line 48, ../scss/screen.scss */
 #footer .inner {
   max-width: 960px;
   margin: 0px auto;
   padding-top: 1em;
 }
 
-/* line 54, ../scss/screen.scss */
+/* line 55, ../scss/screen.scss */
 #content {
   width: 65.8537%;
   float: left;
   margin-right: 2.3%;
 }
 
-/* line 60, ../scss/screen.scss */
+/* line 61, ../scss/screen.scss */
 #sidebar {
   width: 31.7073%;
   float: left;
 }
 
-/* line 75, ../scss/screen.scss */
+/* line 76, ../scss/screen.scss */
 #content, #sidebar, .box {
   -moz-box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 10px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 10px;
@@ -151,12 +152,12 @@ html, body {
   background: #fff;
   margin-bottom: 1em;
 }
-/* line 70, ../scss/screen.scss */
+/* line 71, ../scss/screen.scss */
 #content .inner, #sidebar .inner, .box .inner {
   margin: 1em;
 }
 
-/* line 79, ../scss/screen.scss */
+/* line 80, ../scss/screen.scss */
 .notice {
   background-color: #ffd09d;
 }
