@@ -14,6 +14,7 @@ function () {
           slug = slug.replace(/^\s+/, '').replace(/\s+$/, '');
           slug = slug.replace(/\s+/g, '-');
           $('input[name=slug]').val(slug);
+          $('input[name=_id]').val(slug);
         }
       });
     }

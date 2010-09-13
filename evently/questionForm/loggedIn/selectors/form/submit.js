@@ -1,4 +1,4 @@
-function() {
+function () {
   var form = $(this);
   var fdoc = form.serializeObject();
   fdoc.created_at = new Date();
