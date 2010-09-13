@@ -1,6 +1,9 @@
 function () {
   var ddoc = this;
+
   var Mustache = require('vendor/couchapp/lib/mustache');
+  var Markdown = require('vendor/couchapp/lib/markdown');
+
   var List = require("vendor/couchapp/lib/list");
 
   function html() {
@@ -14,7 +17,7 @@ function () {
         var q = r.doc;
         return {
           "id" : r.id,
-          "question" : q.question,
+          "question" : Markdown.encode(q.question),
           "created_at" : {
             "raw"    : q.created_at,
             "pretty" : "Не так давно"

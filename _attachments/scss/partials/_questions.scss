@@ -13,9 +13,6 @@
   padding-bottom: 0.5em;
   position: relative;
 
-  .text {
-  }
-
   .info {
     font-size: 0.8em;
 
@@ -43,5 +40,12 @@
         }
       }
     }
+  }
+}
+
+.text {
+  ul {
+    list-style: disc;
+    margin: 0.75em 0px 0.75em 1em;
   }
 }

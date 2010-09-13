@@ -320,34 +320,40 @@ textarea {
   padding-bottom: 0.5em;
   position: relative;
 }
-/* line 19, ../scss/partials/_questions.scss */
+/* line 16, ../scss/partials/_questions.scss */
 .answer .info {
   font-size: 0.8em;
 }
-/* line 22, ../scss/partials/_questions.scss */
+/* line 19, ../scss/partials/_questions.scss */
 .answer .info .created_at {
   color: #444;
 }
-/* line 27, ../scss/partials/_questions.scss */
+/* line 24, ../scss/partials/_questions.scss */
 .answer .actions {
   position: absolute;
   right: 0px;
   bottom: 0.5em;
 }
-/* line 32, ../scss/partials/_questions.scss */
+/* line 29, ../scss/partials/_questions.scss */
 .answer .actions a {
   font-size: 0.8em;
   text-transform: lowercase;
   text-decoration: none;
   color: gray;
 }
-/* line 37, ../scss/partials/_questions.scss */
+/* line 34, ../scss/partials/_questions.scss */
 .answer .actions a:hover {
   text-decoration: underline;
 }
-/* line 41, ../scss/partials/_questions.scss */
+/* line 38, ../scss/partials/_questions.scss */
 .answer .actions a.delete:hover {
   color: red;
+}
+
+/* line 47, ../scss/partials/_questions.scss */
+.text ul {
+  list-style: disc;
+  margin: 0.75em 0px 0.75em 1em;
 }
 
 /*
