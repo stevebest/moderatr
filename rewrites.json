@@ -1,0 +1,27 @@
+[
+  {
+    "from" : "questions",
+    "to" : "_list/questions/latest-questions",
+    "query" : {
+      "descending" : true,
+      "limit" : 20,
+      "include_docs" : true
+    }
+  },
+  {
+    "from" : "script/*",
+    "to" : "script/*"
+  },
+  {
+    "from" : "style/*",
+    "to" : "style/*"
+  },
+  {
+    "from" : "vendor/*",
+    "to" : "vendor/*"
+  },
+  {
+    "from" : ":db/*",
+    "to" : "../../*"
+  }
+]

@@ -17,7 +17,7 @@
       </div>
 
       <div id="content">
-        <div id="items" class="inner"></div>
+        <div id="questions" class="inner"></div>
         <div id="questionForm" class="inner"></div>
       </div>
 
@@ -53,7 +53,7 @@
       $.evently.connect("#account", "#questionForm", ["loggedIn", "loggedOut"]);
 
       $("#questionForm").evently("questionForm", app);
-      $("#items").evently("items", app);
+      $("#questions").evently("questions", app);
     });
   </script>
 

@@ -1,10 +1,12 @@
-<div id="question" class="question inner">
+<div id="question-{{id}}" class="question">
   <div class="text">
     {{{question}}}
   </div>
   <div class="info">
-    <div class="created">{{created_at}}</div>
+    {{#created_at}}
+    <abbr class="date" title="{{raw}}">{{pretty}}</abbr>
+    {{/created_at}}
+
     {{>avatar}}
   </div>
 </div>
-

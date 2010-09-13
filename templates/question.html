@@ -8,13 +8,7 @@
   </head>
   <body>
     <div id="root">
-      <div id="pageHeader">
-        <h1 class="logo">
-          <a href="./index.html">Moderatr</a>
-        </h1>
-
-        <div id="account"></div>
-      </div>
+      {{>header}}
 
       {{#question}}
       <div id="content">
@@ -37,9 +31,7 @@
       </div>
       {{/question}}
 
-      <div id="sidebar">
-        <div id="profile"></div>
-      </div>
+      {{>sidebar}}
 
       <div id="root_footer">
       </div>

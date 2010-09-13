@@ -1,0 +1,9 @@
+<script type="text/javascript" src="../vendor/couchapp/loader.js"></script>
+<script type="text/javascript">
+  $.couch.app(function (app) {
+    $('#account').evently('account', app);
+    $('#profile').evently('profile', app);
+
+    $.evently.connect('#account', '#profile', ['loggedIn', 'loggedOut']);
+  });
+</script>

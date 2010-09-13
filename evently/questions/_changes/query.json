@@ -1,5 +1,6 @@
 {
   "view" : "latest-questions",
   "descending" : "true",
-  "limit" : 50
+  "limit" : 50,
+  "include_docs" : true
 }

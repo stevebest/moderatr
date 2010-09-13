@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Moderatr</title>
+    <link rel="stylesheet" href="../style/main.css" type="text/css">
+  </head>
+  <body>
+    <div id="root">
+      {{>header}}
+
+      <div id="content">
+        <div class="inner">
+          <h2>Вопросы</h2>
+          {{#questions}}
+            {{>question}}
+          {{/questions}}
+          {{^questions}}
+            <p>Вопросов пока не задано. Будьте первым!</p>
+          {{/questions}}
+        </div>
+      </div>
+
+      {{>sidebar}}
+
+      <div id="root_footer"></div>
+    </div>
+
+    {{>footer}}
+  </body>
+  {{>scripts}}
+</html>
