@@ -9,6 +9,10 @@
     }
   },
   {
+    "from" : "questions/:id",
+    "to" : "_show/question/:id"
+  },
+  {
     "from" : "script/*",
     "to" : "script/*"
   },
