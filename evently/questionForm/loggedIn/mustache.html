@@ -1,8 +1,14 @@
 <form>
   <h2>Задайте свой вопрос</h2>
   <div>
-    <textarea name="question" rows="5" cols="60"></textarea>
-    <div id="questionSlugPreview"></div>
+    <p>
+      <label for="question">Вопрос</label>
+      <textarea name="question" rows="5" cols="60" style="width: 100%;"></textarea>
+    </p>
+    <p>
+      <label for="slug">Идентификатор вопроса</slug>
+      <input type="text" name="slug" disabled style="width: 100%;">
+    </p>
   </div>
   <div>
     <input type="submit" value="Отправить вопрос">
