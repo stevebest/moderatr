@@ -1,6 +1,9 @@
 <div id="pageHeader">
   <h1 class="logo">
-    <a href="/">Moderatr</a>
+    {{#indexPath}}
+    <a href="{{indexPath}}">Moderatr</a>
+    {{/indexPath}}
+    {{^indexPath}}Moderatr{{/indexPath}}
   </h1>
 
   <div id="account"></div>

@@ -7,16 +7,24 @@ function (head, req) {
 
   var List = require("vendor/couchapp/lib/list");
 
+  /*
+   * HTML presentation
+   */
   function html() {
     var list = [], r = null;
     while (r = getRow()) { 
       list.push(r);
     }
 
+    var links = require('lib/links').init(req);
+
     var stash = {
-      db : req.path[0],
-      design : req.path[2],
-      assets : Path.asset(),
+      "db" : req.path[0],
+      "design" : req.path[2],
+      "assets" : Path.asset(),
+
+      "links" : links,
+      "indexPath" : links['index'],
 
       questions : list.map(function (r) {
         var q = r.doc || null;
@@ -44,6 +52,9 @@ function (head, req) {
         List.send);
   };
 
+  /*
+   * Atom feed presentation
+   */
   function atom() {
     var feed = <feed/>;
     return feed.toXMLString();

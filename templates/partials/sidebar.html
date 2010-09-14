@@ -1,7 +1,26 @@
 <div id="sidebar">
   <div id="profile"></div>
+
+  {{#links}}
   <div class="inner">
-    <h3><a href="/">Главная страница</a></h3>
-    <h3><a href="/question">Задать вопрос</a></h3>
+
+    {{#index}}
+    <h3><a href="{{index}}">Главная страница</a></h3>
+    {{/index}}
+
+    {{#questions}}
+    <h3><a href="{{questions}}">Последние вопросы</a></h3>
+    {{/questions}}
+
+    {{#myQuestions}}
+    <h3><a href="{{myQuestions}}">Мои вопросы</a></h3>
+    {{/myQuestions}}
+
+    {{#ask}}
+    <h3><a href="{{ask}}">Задать вопрос</a></h3>
+    {{/ask}}
+
   </div>
+  {{/links}}
+
 </div>

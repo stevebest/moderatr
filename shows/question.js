@@ -4,10 +4,13 @@ function (doc, req) {
   var Markdown = require('vendor/couchapp/lib/markdown');
   var Path = require('vendor/couchapp/lib/path').init(req);
 
+  var links = require('lib/links').init(req);
+
   var stash = {
     db : req.path[0],
     design : req.path[2],
-    assets : Path.asset()
+    assets : Path.asset(),
+    links : links
   };
 
   stash._id = doc._id;
