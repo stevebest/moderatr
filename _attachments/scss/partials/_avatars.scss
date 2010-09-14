@@ -13,9 +13,12 @@ div.avatar {
     position: absolute;
   }
 
-  .name, .email {
+  .name, .email, .date {
     margin-left: 50px;
     font-size: 80%;
+  }
+  .date {
+    color: #444;
   }
 }
 
