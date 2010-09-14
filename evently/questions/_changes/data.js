@@ -6,7 +6,10 @@ function (data) {
       p = (r.doc && r.doc.profile) || {};
       p.id = r.id;
       p.question = r.doc && r.doc.question;
-      p.created_at = $.prettyDate(r.doc.created_at);
+      p.created_at = {
+        "raw" : r.doc.created_at,      
+        "pretty" : $.prettyDate(r.doc.created_at)
+      };
       return p;
     })
   }

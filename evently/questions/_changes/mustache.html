@@ -1,25 +1,25 @@
 <h2>Последние вопросы</h2>
-<div id="questions">
-  {{#questions}}
-    <div class="question" id="q-{{id}}">
-      <div class="text">{{question}}</div>
-      <div class="created_at">{{created_at}}</div>
 
-      <div class="avatar">
-        {{#gravatar_url}}<img src="{{gravatar_url}}" alt="{{name}}">{{/gravatar_url}}
-        <div class="name">{{nickname}}</div>
-      </div>
+{{#questions}}
+  <div class="question" id="q-{{id}}">
+    <div class="text">{{{question}}}</div>
 
-      <div class="actions">
-        <a class="vote up off" href="#vote-up">&uarr;</a>
-        <a class="vote down off" href="#vote-down">&darr;</a>
+    <div class="avatar">
+      {{#gravatar_url}}
+      <img src="{{gravatar_url}}" alt="{{name}}">
+      {{/gravatar_url}}
 
-        <a href="_show/question/{{id}}" class="reply">Ответить на вопрос</a>
-      </div>
+      <div class="name">{{nickname}}</div>
+      {{#created_at}}
+      <abbr class="date" title="{{raw}}">{{pretty}}</abbr>
+      {{/created_at}}
     </div>
-  {{/questions}}
-  {{^questions}}
-    <div>Вопросов пока нет!</div>
-  {{/questions}}
-</div>
 
+    <div class="actions">
+      <a href="_show/question/{{id}}" class="reply">Ответить на вопрос</a>
+    </div>
+  </div>
+{{/questions}}
+{{^questions}}
+  <div>Вопросов пока нет!</div>
+{{/questions}}

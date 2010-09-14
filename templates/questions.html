@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
     <title>Moderatr</title>
     <link rel="stylesheet" href="../style/main.css" type="text/css">
   </head>
@@ -9,7 +10,7 @@
       {{>header}}
 
       <div id="content">
-        <div class="inner">
+        <div id="questions" class="inner">
           <h2>Вопросы</h2>
           {{#questions}}
             {{>question}}
@@ -17,6 +18,9 @@
           {{^questions}}
             <p>Вопросов пока не задано. Будьте первым!</p>
           {{/questions}}
+        </div>
+        <div class="inner">
+          <div id="questionForm"></div>
         </div>
       </div>
 
@@ -28,4 +32,15 @@
     {{>footer}}
   </body>
   {{>scripts}}
+
+  <script type="text/javascript" charset="utf-8">
+    $.couch.app(function(app) {
+      $.evently.connect("#account", "#questionForm", ["loggedIn", "loggedOut"]);
+
+      $("#questionForm").evently("questionForm", app);
+      $("#questions").evently("questions", app);
+    });
+  </script>
+  <script src="http://www.google.com/jsapi?key=ABQIAAAAJS76WyEQx2xyCtz2olarexR2dlL0xHf9gLx1lrdFcuGL-My5JxQXuW8TYdLayJJ51hxg_v9VXkoXwQ" type="text/javascript"></script>
+
 </html>

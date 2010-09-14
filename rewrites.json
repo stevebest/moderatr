@@ -1,5 +1,9 @@
 [
   {
+    "from" : "",
+    "to" : "index.html"
+  },
+  {
     "from" : "questions",
     "to" : "_list/questions/latest-questions",
     "query" : {
