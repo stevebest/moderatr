@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Moderatr - Вопрос {{#_id}}{{_id}}{{/_id}}</title>
-    <!-- FIXME Эта ссылка работает только для локальной установки! -->
-    <base href="http://localhost:5984/moderatr/_design/moderatr/">
-    <link rel="stylesheet" href="style/main.css" type="text/css">
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+    <title>Moderatr - Вопрос</title>
+    <link rel="stylesheet" href="{{assets}}/style/main.css" type="text/css">
   </head>
   <body>
     <div id="root">
@@ -12,7 +11,7 @@
 
       {{#question}}
       <div id="content">
-        <div class="inner">
+        <div class="inner" id="question">
         {{>question}}
         </div>
 
@@ -28,7 +27,7 @@
       {{^question}}
       <div id="content">
         <div class="inner">
-        {{>questionForm}}
+          <p>Тут что-то не так.</p>
         </div>
       </div>
       {{/question}}
@@ -41,22 +40,21 @@
     {{>footer}}
   </body>
 
-  <script src="vendor/couchapp/loader.js"></script>
-  <script type="text/javascript" charset="utf-8">
-    $.couch.app(function(app) {
-      $('#account').evently('account', app);
-      $('#profile').evently('profile', app);
+{{>scripts}}
 
-      $.evently.connect('#account', '#profile', ['loggedIn', 'loggedOut']);
+<script type="text/javascript" charset="utf-8">
+  $.couch.app(function(app) {
+    {{#_id}}
+    $$('#question').id = '{{_id}}';
 
-      {{#_id}}
-      $$('#question').id = '{{_id}}';
+    $("#answers").evently("answers", app);
 
-      $("#answers").evently("answers", app);
-      $("#answerForm").evently("answerForm", app);
-
-      $.evently.connect('#account', '#answerForm', ['loggedIn', 'loggedOut']);
-      {{/_id}}
-    });
-  </script>
+    $("#answerForm").evently("answerForm", app);
+    $.evently.connect('#account', '#answerForm', ['loggedIn', 'loggedOut']);
+    {{/_id}}
+  }, {
+    "db" : "{{db}}",
+    "design" : "{{design}}"
+  });
+</script>
 </html>

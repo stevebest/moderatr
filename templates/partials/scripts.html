@@ -1,9 +1,30 @@
-<script type="text/javascript" src="../vendor/couchapp/loader.js"></script>
+<script type="text/javascript">
+  function couchapp_load(scripts) {
+    for (var i=0; i < scripts.length; i++) {
+      document.write('<script src="'+scripts[i]+'"><\/script>')
+    };
+  };
+
+  couchapp_load([
+    "/_utils/script/sha1.js",
+    "/_utils/script/json2.js",
+    "/_utils/script/jquery.js",
+    "/_utils/script/jquery.couch.js",
+    "{{assets}}/vendor/couchapp/jquery.couch.app.js",
+    "{{assets}}/vendor/couchapp/jquery.couch.app.util.js",
+    "{{assets}}/vendor/couchapp/jquery.mustache.js",
+    "{{assets}}/vendor/couchapp/jquery.evently.js",
+    "{{assets}}/vendor/couchapp/jquery.validate.js"
+  ]);
+</script>
 <script type="text/javascript">
   $.couch.app(function (app) {
     $('#account').evently('account', app);
     $('#profile').evently('profile', app);
 
     $.evently.connect('#account', '#profile', ['loggedIn', 'loggedOut']);
+  }, {
+    "db" : "{{db}}",
+    "design" : "{{design}}"
   });
 </script>

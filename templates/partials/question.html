@@ -1,12 +1,29 @@
-<div id="question" class="question">
+<div class="question">
   <div class="text">
     {{{question}}}
   </div>
-  <div class="info">
-    {{#created_at}}
-    <abbr class="date" title="{{raw}}">{{pretty}}</abbr>
-    {{/created_at}}
 
-    {{>avatar}}
+  <div class="info">
+    <div class="avatar">
+      {{#profile}}
+      {{#gravatar_url}}
+      <img src="{{gravatar_url}}" alt="{{name}}">
+      {{/gravatar_url}}
+
+      <div class="name">{{nickname}}</div>
+      {{/profile}}
+
+      {{#created_at}}
+      <abbr class="date" title="{{raw}}">{{pretty}}</abbr>
+      {{/created_at}}
+    </div>
   </div>
+
+  {{#actions}}
+  <div class="actions">
+    {{#show}}
+    <a href="{{show}}">Ответить на вопрос</a>
+    {{/show}}
+  </div>
+  {{/actions}}
 </div>
