@@ -27,7 +27,14 @@
       {{^question}}
       <div id="content">
         <div class="inner">
-          <p>Тут что-то не так.</p>
+          <div id="questionForm"></div>
+        </div>
+
+        <div id="questionTips" class="inner">
+          <h3>Как составить вопрос?</h3>
+          <p>
+            Хороший вопрос!
+          </p>
         </div>
       </div>
       {{/question}}
@@ -44,14 +51,19 @@
 
 <script type="text/javascript" charset="utf-8">
   $.couch.app(function(app) {
-    {{#_id}}
-    $$('#question').id = '{{_id}}';
+    var id = '{{_id}}';
 
-    $("#answers").evently("answers", app);
+    if (id) {
+      $$('#question').id = id;
 
-    $("#answerForm").evently("answerForm", app);
-    $.evently.connect('#account', '#answerForm', ['loggedIn', 'loggedOut']);
-    {{/_id}}
+      $("#answers").evently("answers", app);
+
+      $("#answerForm").evently("answerForm", app);
+      $.evently.connect('#account', '#answerForm', ['loggedIn', 'loggedOut']);
+    } else {
+      $('#questionForm').evently("questionForm", app);
+      $.evently.connect('#account', '#questionForm', ['loggedIn', 'loggedOut']);
+    }
   }, {
     "db" : "{{db}}",
     "design" : "{{design}}"

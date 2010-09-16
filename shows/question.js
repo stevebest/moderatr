@@ -13,10 +13,16 @@ function (doc, req) {
     links : links
   };
 
-  stash._id = doc._id;
+  if (doc) {
+    stash._id = doc._id;
 
-  stash.question = doc || {};
-  stash.question.question = Markdown.encode(doc.question || "");
+    stash.question = doc || {};
+    stash.question.question = Markdown.encode(doc.question || "");
+  } else {
+    if (req.id) {
+      throw { "not_found" : "Question not found" };
+    }
+  }
 
   return Mustache.to_html(
       ddoc.templates.question,
