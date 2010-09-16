@@ -1,6 +1,9 @@
 function () {
-  var text = this.value;
-  text = text || "";
+  var text = $(this).val();
+  if (!text) {
+    return;
+  }
+
   text = text.toLowerCase().match(/^([^!?.]+)[!?.]?/);
   text = text[0];
 
