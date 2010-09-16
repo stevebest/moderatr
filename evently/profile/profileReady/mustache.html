@@ -5,11 +5,12 @@
 
     <div class="name">
     {{#url}}
-      <a href="{{url}}" class="url">{{name}}</a>
+      <a href="{{url}}" class="url">{{nickname}}</a>
     {{/url}}
     {{^url}}
-      {{name}}
+      {{nickname}}
     {{/url}}
+      <span>({{name}})</a>
     </div>
 
     {{#email}}
